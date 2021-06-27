@@ -304,6 +304,28 @@ class Recruteur extends \App\Entity\Recruteur implements \Doctrine\ORM\Proxy\Pro
     /**
      * {@inheritDoc}
      */
+    public function isVerified(): bool
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isVerified', []);
+
+        return parent::isVerified();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setIsVerified(bool $isVerified): \App\Entity\Recruteur
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIsVerified', [$isVerified]);
+
+        return parent::setIsVerified($isVerified);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getName(): ?string
     {
 

@@ -255,6 +255,8 @@ return [[
 '%5BApp%5CEntity%5CRecruteur%23setPassword%5D%5B1%5D' => 1,
 '%5BApp%5CEntity%5CRecruteur%23getSalt%5D%5B1%5D' => 1,
 '%5BApp%5CEntity%5CRecruteur%23eraseCredentials%5D%5B1%5D' => 1,
+'%5BApp%5CEntity%5CRecruteur%23isVerified%5D%5B1%5D' => 1,
+'%5BApp%5CEntity%5CRecruteur%23setIsVerified%5D%5B1%5D' => 1,
 '%5BApp%5CEntity%5CRecruteur%23getName%5D%5B1%5D' => 1,
 '%5BApp%5CEntity%5CRecruteur%23setName%5D%5B1%5D' => 1,
 '%5BApp%5CEntity%5CRecruteur%23getDescription%5D%5B1%5D' => 1,

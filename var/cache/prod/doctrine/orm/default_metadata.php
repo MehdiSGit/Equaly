@@ -8,11 +8,11 @@ return [[
 '%5BApp%5CEntity%5CCandidat%24CLASSMETADATA%5D%5B1%5D' => 1,
 '%5BApp%5CEntity%5CRecruteur%24CLASSMETADATA%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CJob%24CLASSMETADATA%5D%5B1%5D' => 3,
-'%5BApp%5CEntity%5CDocument%24CLASSMETADATA%5D%5B1%5D' => 4,
-'%5BApp%5CEntity%5CCandidatEvaluation%24CLASSMETADATA%5D%5B1%5D' => 5,
-'%5BApp%5CEntity%5CCompany%24CLASSMETADATA%5D%5B1%5D' => 6,
-'%5BApp%5CEntity%5CResetPasswordRequest%24CLASSMETADATA%5D%5B1%5D' => 7,
-'%5BApp%5CEntity%5CJobPostuler%24CLASSMETADATA%5D%5B1%5D' => 8,
+'%5BApp%5CEntity%5CCandidatEvaluation%24CLASSMETADATA%5D%5B1%5D' => 4,
+'%5BApp%5CEntity%5CCompany%24CLASSMETADATA%5D%5B1%5D' => 5,
+'%5BApp%5CEntity%5CDocument%24CLASSMETADATA%5D%5B1%5D' => 6,
+'%5BApp%5CEntity%5CJobPostuler%24CLASSMETADATA%5D%5B1%5D' => 7,
+'%5BApp%5CEntity%5CResetPasswordRequest%24CLASSMETADATA%5D%5B1%5D' => 8,
 
 ], [
 
@@ -684,6 +684,202 @@ return [[
         [
             'stdClass' => [
                 'name' => [
+                    'App\\Entity\\CandidatEvaluation',
+                ],
+                'namespace' => [
+                    'App\\Entity',
+                ],
+                'rootEntityName' => [
+                    'App\\Entity\\CandidatEvaluation',
+                ],
+                'customRepositoryClassName' => [
+                    'App\\Repository\\CandidatEvaluationRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'id' => true,
+                            'columnName' => 'id',
+                        ],
+                        'notes' => [
+                            'fieldName' => 'notes',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 255,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'notes',
+                        ],
+                        'hired' => [
+                            'fieldName' => 'hired',
+                            'type' => 'boolean',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'hired',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'notes' => 'notes',
+                        'hired' => 'hired',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'notes' => 'notes',
+                        'hired' => 'hired',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'candidat_evaluation',
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+},
+5 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'App\\Entity\\Company',
+                ],
+                'namespace' => [
+                    'App\\Entity',
+                ],
+                'rootEntityName' => [
+                    'App\\Entity\\Company',
+                ],
+                'customRepositoryClassName' => [
+                    'App\\Repository\\CompanyRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'id' => true,
+                            'columnName' => 'id',
+                        ],
+                        'code' => [
+                            'fieldName' => 'code',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 255,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'code',
+                        ],
+                        'name' => [
+                            'fieldName' => 'name',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 255,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'name',
+                        ],
+                        'description' => [
+                            'fieldName' => 'description',
+                            'type' => 'text',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => true,
+                            'precision' => 0,
+                            'columnName' => 'description',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'code' => 'code',
+                        'name' => 'name',
+                        'description' => 'description',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'code' => 'code',
+                        'name' => 'name',
+                        'description' => 'description',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'company',
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+},
+6 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
                     'App\\Entity\\Document',
                 ],
                 'namespace' => [
@@ -832,203 +1028,143 @@ return [[
         []
     );
 },
-5 => static function () {
-    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
-        $o = [
-            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
-            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
-        ],
-        null,
-        [
-            'stdClass' => [
-                'name' => [
-                    'App\\Entity\\CandidatEvaluation',
-                ],
-                'namespace' => [
-                    'App\\Entity',
-                ],
-                'rootEntityName' => [
-                    'App\\Entity\\CandidatEvaluation',
-                ],
-                'customRepositoryClassName' => [
-                    'App\\Repository\\CandidatEvaluationRepository',
-                ],
-                'identifier' => [
-                    [
-                        'id',
-                    ],
-                ],
-                'generatorType' => [
-                    4,
-                ],
-                'fieldMappings' => [
-                    [
-                        'id' => [
-                            'fieldName' => 'id',
-                            'type' => 'integer',
-                            'scale' => 0,
-                            'length' => null,
-                            'unique' => false,
-                            'nullable' => false,
-                            'precision' => 0,
-                            'id' => true,
-                            'columnName' => 'id',
-                        ],
-                        'notes' => [
-                            'fieldName' => 'notes',
-                            'type' => 'string',
-                            'scale' => 0,
-                            'length' => 255,
-                            'unique' => false,
-                            'nullable' => false,
-                            'precision' => 0,
-                            'columnName' => 'notes',
-                        ],
-                        'hired' => [
-                            'fieldName' => 'hired',
-                            'type' => 'boolean',
-                            'scale' => 0,
-                            'length' => null,
-                            'unique' => false,
-                            'nullable' => false,
-                            'precision' => 0,
-                            'columnName' => 'hired',
-                        ],
-                    ],
-                ],
-                'fieldNames' => [
-                    [
-                        'id' => 'id',
-                        'notes' => 'notes',
-                        'hired' => 'hired',
-                    ],
-                ],
-                'columnNames' => [
-                    [
-                        'id' => 'id',
-                        'notes' => 'notes',
-                        'hired' => 'hired',
-                    ],
-                ],
-                'table' => [
-                    [
-                        'name' => 'candidat_evaluation',
-                    ],
-                ],
-                'idGenerator' => [
-                    $o[1],
-                ],
-            ],
-        ],
-        $o[0],
-        []
-    );
-},
-6 => static function () {
-    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
-        $o = [
-            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
-            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
-        ],
-        null,
-        [
-            'stdClass' => [
-                'name' => [
-                    'App\\Entity\\Company',
-                ],
-                'namespace' => [
-                    'App\\Entity',
-                ],
-                'rootEntityName' => [
-                    'App\\Entity\\Company',
-                ],
-                'customRepositoryClassName' => [
-                    'App\\Repository\\CompanyRepository',
-                ],
-                'identifier' => [
-                    [
-                        'id',
-                    ],
-                ],
-                'generatorType' => [
-                    4,
-                ],
-                'fieldMappings' => [
-                    [
-                        'id' => [
-                            'fieldName' => 'id',
-                            'type' => 'integer',
-                            'scale' => 0,
-                            'length' => null,
-                            'unique' => false,
-                            'nullable' => false,
-                            'precision' => 0,
-                            'id' => true,
-                            'columnName' => 'id',
-                        ],
-                        'code' => [
-                            'fieldName' => 'code',
-                            'type' => 'string',
-                            'scale' => 0,
-                            'length' => 255,
-                            'unique' => false,
-                            'nullable' => false,
-                            'precision' => 0,
-                            'columnName' => 'code',
-                        ],
-                        'name' => [
-                            'fieldName' => 'name',
-                            'type' => 'string',
-                            'scale' => 0,
-                            'length' => 255,
-                            'unique' => false,
-                            'nullable' => false,
-                            'precision' => 0,
-                            'columnName' => 'name',
-                        ],
-                        'description' => [
-                            'fieldName' => 'description',
-                            'type' => 'text',
-                            'scale' => 0,
-                            'length' => null,
-                            'unique' => false,
-                            'nullable' => true,
-                            'precision' => 0,
-                            'columnName' => 'description',
-                        ],
-                    ],
-                ],
-                'fieldNames' => [
-                    [
-                        'id' => 'id',
-                        'code' => 'code',
-                        'name' => 'name',
-                        'description' => 'description',
-                    ],
-                ],
-                'columnNames' => [
-                    [
-                        'id' => 'id',
-                        'code' => 'code',
-                        'name' => 'name',
-                        'description' => 'description',
-                    ],
-                ],
-                'table' => [
-                    [
-                        'name' => 'company',
-                    ],
-                ],
-                'idGenerator' => [
-                    $o[1],
-                ],
-            ],
-        ],
-        $o[0],
-        []
-    );
-},
 7 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'App\\Entity\\JobPostuler',
+                ],
+                'namespace' => [
+                    'App\\Entity',
+                ],
+                'rootEntityName' => [
+                    'App\\Entity\\JobPostuler',
+                ],
+                'customRepositoryClassName' => [
+                    'App\\Repository\\JobPostulerRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'id' => true,
+                            'columnName' => 'id',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'job_postuler',
+                    ],
+                ],
+                'associationMappings' => [
+                    [
+                        'job' => [
+                            'fieldName' => 'job',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'job_id',
+                                    'referencedColumnName' => 'id',
+                                ],
+                            ],
+                            'cascade' => [],
+                            'inversedBy' => 'postulers',
+                            'targetEntity' => 'App\\Entity\\Job',
+                            'fetch' => 2,
+                            'type' => 2,
+                            'mappedBy' => null,
+                            'isOwningSide' => true,
+                            'sourceEntity' => 'App\\Entity\\JobPostuler',
+                            'isCascadeRemove' => false,
+                            'isCascadePersist' => false,
+                            'isCascadeRefresh' => false,
+                            'isCascadeMerge' => false,
+                            'isCascadeDetach' => false,
+                            'sourceToTargetKeyColumns' => [
+                                'job_id' => 'id',
+                            ],
+                            'joinColumnFieldNames' => [
+                                'job_id' => 'job_id',
+                            ],
+                            'targetToSourceKeyColumns' => [
+                                'id' => 'job_id',
+                            ],
+                            'orphanRemoval' => false,
+                        ],
+                        'candidat' => [
+                            'fieldName' => 'candidat',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'candidat_id',
+                                    'referencedColumnName' => 'id',
+                                ],
+                            ],
+                            'cascade' => [],
+                            'inversedBy' => 'postulers',
+                            'targetEntity' => 'App\\Entity\\Candidat',
+                            'fetch' => 2,
+                            'type' => 2,
+                            'mappedBy' => null,
+                            'isOwningSide' => true,
+                            'sourceEntity' => 'App\\Entity\\JobPostuler',
+                            'isCascadeRemove' => false,
+                            'isCascadePersist' => false,
+                            'isCascadeRefresh' => false,
+                            'isCascadeMerge' => false,
+                            'isCascadeDetach' => false,
+                            'sourceToTargetKeyColumns' => [
+                                'candidat_id' => 'id',
+                            ],
+                            'joinColumnFieldNames' => [
+                                'candidat_id' => 'candidat_id',
+                            ],
+                            'targetToSourceKeyColumns' => [
+                                'id' => 'candidat_id',
+                            ],
+                            'orphanRemoval' => false,
+                        ],
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+},
+8 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
@@ -1170,142 +1306,6 @@ return [[
                             ],
                             'targetToSourceKeyColumns' => [
                                 'id' => 'user_id',
-                            ],
-                            'orphanRemoval' => false,
-                        ],
-                    ],
-                ],
-                'idGenerator' => [
-                    $o[1],
-                ],
-            ],
-        ],
-        $o[0],
-        []
-    );
-},
-8 => static function () {
-    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
-        $o = [
-            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
-            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
-        ],
-        null,
-        [
-            'stdClass' => [
-                'name' => [
-                    'App\\Entity\\JobPostuler',
-                ],
-                'namespace' => [
-                    'App\\Entity',
-                ],
-                'rootEntityName' => [
-                    'App\\Entity\\JobPostuler',
-                ],
-                'customRepositoryClassName' => [
-                    'App\\Repository\\JobPostulerRepository',
-                ],
-                'identifier' => [
-                    [
-                        'id',
-                    ],
-                ],
-                'generatorType' => [
-                    4,
-                ],
-                'fieldMappings' => [
-                    [
-                        'id' => [
-                            'fieldName' => 'id',
-                            'type' => 'integer',
-                            'scale' => 0,
-                            'length' => null,
-                            'unique' => false,
-                            'nullable' => false,
-                            'precision' => 0,
-                            'id' => true,
-                            'columnName' => 'id',
-                        ],
-                    ],
-                ],
-                'fieldNames' => [
-                    [
-                        'id' => 'id',
-                    ],
-                ],
-                'columnNames' => [
-                    [
-                        'id' => 'id',
-                    ],
-                ],
-                'table' => [
-                    [
-                        'name' => 'job_postuler',
-                    ],
-                ],
-                'associationMappings' => [
-                    [
-                        'job' => [
-                            'fieldName' => 'job',
-                            'joinColumns' => [
-                                [
-                                    'name' => 'job_id',
-                                    'referencedColumnName' => 'id',
-                                ],
-                            ],
-                            'cascade' => [],
-                            'inversedBy' => 'postulers',
-                            'targetEntity' => 'App\\Entity\\Job',
-                            'fetch' => 2,
-                            'type' => 2,
-                            'mappedBy' => null,
-                            'isOwningSide' => true,
-                            'sourceEntity' => 'App\\Entity\\JobPostuler',
-                            'isCascadeRemove' => false,
-                            'isCascadePersist' => false,
-                            'isCascadeRefresh' => false,
-                            'isCascadeMerge' => false,
-                            'isCascadeDetach' => false,
-                            'sourceToTargetKeyColumns' => [
-                                'job_id' => 'id',
-                            ],
-                            'joinColumnFieldNames' => [
-                                'job_id' => 'job_id',
-                            ],
-                            'targetToSourceKeyColumns' => [
-                                'id' => 'job_id',
-                            ],
-                            'orphanRemoval' => false,
-                        ],
-                        'candidat' => [
-                            'fieldName' => 'candidat',
-                            'joinColumns' => [
-                                [
-                                    'name' => 'candidat_id',
-                                    'referencedColumnName' => 'id',
-                                ],
-                            ],
-                            'cascade' => [],
-                            'inversedBy' => 'postulers',
-                            'targetEntity' => 'App\\Entity\\Candidat',
-                            'fetch' => 2,
-                            'type' => 2,
-                            'mappedBy' => null,
-                            'isOwningSide' => true,
-                            'sourceEntity' => 'App\\Entity\\JobPostuler',
-                            'isCascadeRemove' => false,
-                            'isCascadePersist' => false,
-                            'isCascadeRefresh' => false,
-                            'isCascadeMerge' => false,
-                            'isCascadeDetach' => false,
-                            'sourceToTargetKeyColumns' => [
-                                'candidat_id' => 'id',
-                            ],
-                            'joinColumnFieldNames' => [
-                                'candidat_id' => 'candidat_id',
-                            ],
-                            'targetToSourceKeyColumns' => [
-                                'id' => 'candidat_id',
                             ],
                             'orphanRemoval' => false,
                         ],
