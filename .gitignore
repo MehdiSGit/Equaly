@@ -1,18 +1,14 @@
 
 ###> symfony/framework-bundle ###
 
-
-
-
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
 
 ###< symfony/phpunit-bridge ###
-.DS_Store
 
 ###> symfony/webpack-encore-bundle ###
 
 ###< symfony/webpack-encore-bundle ###
 
-/assets/envjs.js
+
