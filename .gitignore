@@ -11,6 +11,5 @@
 
 ###< symfony/webpack-encore-bundle ###
 
-vendor
 /.env.local
 /vendor/
